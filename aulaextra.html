@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
+
+    <title>Aulas EXTRAS</title>
+</head>
+<body>
+    <main>
+        <header class="navbar">
+            <div class="container">
+                <h1><img class="logo" src="./imgs/logo2.png" alt="Logo BGT"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="perguntas.html">Perguntas</a></li>
+                        <li><a href="aulaextra.html">Aula Extra</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="login.html">Login/Cadastro</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="conteudos">
+                <div class="container">
+                    <h3>Conteúdos do Curso EXTRA</h3>
+
+                    <p>
+                        Nestas aulas, você seguirá a jornada completa do desenvolvimento front-end. Começamos com o HTML Básico, onde você aprenderá a construir a fundação e a estrutura de qualquer página web. Em seguida, mergulhamos no CSS para dar vida ao seu projeto com estilos, layouts responsivos e animações.
+
+                        Para consolidar tudo, finalizamos com um Projeto Integrador, onde você aplicará 100% do que aprendeu para construir um site completo do zero.
+                    </p>
+
+                    <div class="container-aulas">
+                    
+                        <div class="card-aula">
+                            <img src="./imgs/html.png" alt="Ilustração do HTML5">
+                            <div class="card-conteudo">
+                            <h3>Introdução ao HTML</h3>
+                            <a href="https://www.youtube.com/playlist?list=PLS0tAu7lah3-7_DmnqQM6qeQn5lp-kevp" target="_blank" class="botao-aula">Ver Aulas!</a>
+                            </div>
+                        </div>
+
+                        <div class="card-aula">
+                            <img src="./imgs/css.png" alt="Ilustração do CSS3">
+                            <div class="card-conteudo">
+                            <h3>CSS para Estilização e Layouts responsivos</h3>
+                            <a href="https://www.youtube.com/playlist?list=PLS0tAu7lah3_qpy07EHoLpqPPJmq4ttyS" target="_blank" class="botao-aula">Ver Aulas!</a>
+                            </div>
+                        </div>
+
+                        <div class="card-aula">
+                            <img src="./imgs/projetointegrador.png" alt="Ilustração de um projeto">
+                            <div class="card-conteudo">
+                            <h3>Projeto integrador</h3>
+                            <a href="https://docs.google.com/document/d/1K-nReCLGADRihdx3-uHLsbcIUI_NvgAsQTgVU7qLooM/edit?usp=sharing" target="_blank" class="botao-aula">Ver Intruções!</a>
+                            </div>
+                        </div>
+
+                        <div class="card-aula">
+                            <img src="./imgs/matetial.png" alt="Ilustração de documentos">
+                            <div class="card-conteudo">
+                            <h3>Material Complementar</h3>
+                            <a href="https://docs.google.com/document/d/1ieAUtUeCz5EIfZru4j1VilK6zz7IDHWor4CllYlRh2o/edit?usp=drivesdk" target="_blank" class="botao-aula">Ver Material!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+            <footer>
+                <div class="container">
+                    <p>&copy; Copyright BGT 2025.</p>
+                </div>
+            </footer>
+
+        <script>        
+            const navbar = document.querySelector(".navbar");
+
+            window.addEventListener("scroll", () => {
+
+            if (window.scrollY > 70) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+
+            });
+        </script>
+       
+    </body>
+</html>
