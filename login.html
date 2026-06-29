@@ -28,14 +28,14 @@
     <main class="login-container">
         <div class="auth-card" id="login-card">
             <h2>Entrar</h2>
-            <form>
+            <form id="loginForm">
                 <div class="input-group">
                     <label>E-mail</label>
-                    <input type="email" placeholder="seu@email.com" required>
+                    <input type="email" id="email" placeholder="seu@email.com" required>
                 </div>
                 <div class="input-group">
                     <label>Senha</label>
-                    <input type="password" placeholder="senha" required>
+                    <input type="password" id="password" placeholder="senha" required>
                 </div>
                 <button type="submit" class="btn-auth">Acessar Conta</button>
             </form>
@@ -44,18 +44,18 @@
 
         <div class="auth-card" id="register-card" style="display: none;">
             <h2>Criar Conta</h2>
-            <form>
+            <form id="registerForm">
                 <div class="input-group">
                     <label>Nome Completo</label>
-                    <input type="text" placeholder="Seu nome" required>
+                    <input type="text" id="name" placeholder="Seu nome" required>
                 </div>
                 <div class="input-group">
                     <label>E-mail</label>
-                    <input type="email" placeholder="seu@email.com" required>
+                    <input type="email" id="email" placeholder="seu@email.com" required>
                 </div>
                 <div class="input-group">
                     <label>Senha</label>
-                    <input type="password" placeholder="Crie uma senha" required>
+                    <input type="password" id="password" placeholder="Crie uma senha" required>
                 </div>
                 <button type="submit" class="btn-auth">Finalizar Cadastro</button>
             </form>
@@ -69,6 +69,9 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/cadastro.js"></script>
     <script>
         function toggleAuth() {
             const loginCard = document.getElementById('login-card');
