@@ -1,24 +1,27 @@
-const form = document.getElementById("cadastroForm");
+const formCadastro = document.getElementById("cadastroForm");
 
-form.addEventListener("submit", async (e) => {
+formCadastro.addEventListener("submit", async (e) => {
     e.preventDefault();
 
-    const nome = document.getElementById("nome").value;
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("emailCadastro").value;
+    const password = document.getElementById("passwordCadastro").value;
+
+    console.log({ name, email, password });
 
     try {
-        await axios.post("http://localhost:3000/usuario/cadastro", {
-            nome,
+        const response = await axios.post("http://localhost:3000/usuario/cadastro", {
+            name,
             email,
             password
         });
+
 
         alert("Usuário cadastrado!");
 
         window.location.href = "login.html";
 
     } catch (error) {
-        alert(error.response.data.error);
+        alert(error?.response?.data?.error || "Erro ao cadastrar usuário");
     }
 });
