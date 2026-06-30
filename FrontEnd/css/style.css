@@ -175,6 +175,52 @@
             gap: 25px;
         }
 
+        .form-pergunta {
+            max-width: 700px;
+            margin: 0 auto 40px;
+            background: white;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .form-pergunta textarea {
+            width: 100%;
+            min-height: 120px;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            resize: vertical;
+            font-family: inherit;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .form-pergunta textarea:focus {
+            border-color: #005a9c;
+            box-shadow: 0 0 5px rgba(0,90,156,0.2);
+        }
+
+        .estado-perguntas {
+            grid-column: 1 / -1;
+            text-align: center;
+            color: #4b5563;
+        }
+
+        .estado-perguntas.erro,
+        .mensagem-pergunta.erro {
+            color: #b91c1c;
+        }
+
+        .mensagem-pergunta {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .mensagem-pergunta.sucesso {
+            color: #047857;
+        }
+
         .card {
             background: white;
             padding: 25px;

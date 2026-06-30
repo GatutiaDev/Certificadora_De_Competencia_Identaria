@@ -30,51 +30,34 @@
     </header>
 
 
-    <div class="topo-perguntas">
+    <main class="container">
+        <div class="topo-perguntas">
                 <h2>Perguntas da Comunidade</h2>
                 <p>Explore dúvidas e ajude outros alunos.</p>
             
             <button class="btn-pergunta" onclick="fazerPergunta()">Fazer Pergunta</button>
         </div>
 
-
-        <div class="perguntas-lista">
-            <div class="card">
-                <div>
-                    <h2>Como funciona a fotossíntese?</h2>
-                    <p class="descricao">Preciso entender de forma simples como as plantas produzem energia.</p>
-                    <div class="infos">
-                        <span>👤 Gabriel</span>
-                        <a href="#" class="btn-ver-resp">💬 5 Respostas</a>
-                    </div>
+        <section class="form-pergunta" id="novaPergunta">
+            <h2>Nova pergunta</h2>
+            <form id="perguntaForm">
+                <div class="input-group">
+                    <label for="perguntaTitulo">Titulo</label>
+                    <input type="text" id="perguntaTitulo" placeholder="Ex: Como funciona a fotossintese?" required>
                 </div>
-                <button class="btn-responder" onclick="responderPergunta()">Responder</button>
-            </div>
-
-            <div class="card">
-                <div>
-                    <h2>Qual a diferença entre HTML e CSS?</h2>
-                    <p class="descricao">Estou começando no desenvolvimento web e queria entender melhor.</p>
-                    <div class="infos">
-                        <span>👤 Ana</span>
-                        <a href="#" class="btn-ver-resp">💬 8 Respostas</a>
-                    </div>
+                <div class="input-group">
+                    <label for="perguntaDescricao">Descricao</label>
+                    <textarea id="perguntaDescricao" placeholder="Descreva sua duvida" required></textarea>
                 </div>
-                <button class="btn-responder" onclick="responderPergunta()">Responder</button>
-            </div>
+                <button class="btn-auth" type="submit">Enviar pergunta</button>
+                <p class="mensagem-pergunta" id="perguntaMensagem"></p>
+            </form>
+        </section>
 
-            <div class="card">
-                <div>
-                    <h2>Como calcular porcentagem?</h2>
-                    <p class="descricao">Alguém pode explicar com exemplos simples de matemática financeira?</p>
-                    <div class="infos">
-                        <span>👤 Carlos</span>
-                        <a href="#" class="btn-ver-resp">💬 Respostas</a>
-                    </div>
-                </div>
-                <button class="btn-responder" onclick="responderPergunta()">Responder</button>
-            </div>
+        <div class="perguntas-lista" id="perguntasLista">
+            <p class="estado-perguntas">Carregando perguntas...</p>
         </div>
+    </main>
 
 
     <footer>
@@ -98,5 +81,7 @@
 
         });
     </script>
+    <script src="js/api.js"></script>
+    <script src="js/perguntas.js"></script>
 </body>
 </html>

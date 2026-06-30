@@ -54,42 +54,8 @@
         </div>
 
 
-        <div class="perguntas-lista">
-            <div class="card">
-                <div>
-                    <h2>Como funciona a fotossíntese?</h2>
-                    <p class="descricao">Preciso entender de forma simples como as plantas produzem energia.</p>
-                    <div class="infos">
-                        <span>👤 Gabriel</span>
-                        <a href="#" class="btn-ver-resp">💬 5 Respostas</a>
-                    </div>
-                </div>
-                <button class="btn-responder" onclick="responderPergunta()">Responder</button>
-            </div>
-
-            <div class="card">
-                <div>
-                    <h2>Qual a diferença entre HTML e CSS?</h2>
-                    <p class="descricao">Estou começando no desenvolvimento web e queria entender melhor.</p>
-                    <div class="infos">
-                        <span>👤 Ana</span>
-                        <a href="#" class="btn-ver-resp">💬 8 Respostas</a>
-                    </div>
-                </div>
-                <button class="btn-responder" onclick="responderPergunta()">Responder</button>
-            </div>
-
-            <div class="card">
-                <div>
-                    <h2>Como calcular porcentagem?</h2>
-                    <p class="descricao">Alguém pode explicar com exemplos simples de matemática financeira?</p>
-                    <div class="infos">
-                        <span>👤 Carlos</span>
-                        <a href="#" class="btn-ver-resp">💬 Respostas</a>
-                    </div>
-                </div>
-                <button class="btn-responder" onclick="responderPergunta()">Responder</button>
-            </div>
+        <div class="perguntas-lista" id="perguntasLista" data-limit="3">
+            <p class="estado-perguntas">Carregando perguntas...</p>
         </div>
 
         <div class="area-mais-perguntas">
@@ -115,14 +81,6 @@
     }
     </script>
     <script>
-        function fazerPergunta() {
-            alert('Área para criar uma nova pergunta');
-        }
-
-        function responderPergunta() {
-            alert('Área para responder a pergunta');
-        }
-
         const navbar = document.querySelector(".navbar");
 
         window.addEventListener("scroll", () => {
@@ -135,5 +93,7 @@
 
         });
     </script>
+    <script src="js/api.js"></script>
+    <script src="js/perguntas.js"></script>
 </body>
 </html>

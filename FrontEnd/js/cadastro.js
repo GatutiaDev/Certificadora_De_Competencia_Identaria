@@ -7,10 +7,8 @@ formCadastro.addEventListener("submit", async (e) => {
     const email = document.getElementById("emailCadastro").value;
     const password = document.getElementById("passwordCadastro").value;
 
-    console.log({ name, email, password });
-
     try {
-        const response = await axios.post("http://localhost:3000/usuario/cadastro", {
+        await window.api.cadastrarUsuario({
             name,
             email,
             password
@@ -22,6 +20,6 @@ formCadastro.addEventListener("submit", async (e) => {
         window.location.href = "login.html";
 
     } catch (error) {
-        alert(error?.response?.data?.error || "Erro ao cadastrar usuário");
+        alert(error.message || "Erro ao cadastrar usuário");
     }
 });

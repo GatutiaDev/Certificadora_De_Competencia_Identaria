@@ -7,18 +7,18 @@ form.addEventListener("submit", async (e) => {
     const password = document.getElementById("password").value;
 
     try {
-        const response = await axios.post("http://localhost:3000/usuario/login", {
+        const response = await window.api.loginUsuario({
             email,
             password
         });
 
-        localStorage.setItem("token", response.data.token);
+        localStorage.setItem("token", response.token);
 
         alert("Login realizado!");
 
         window.location.href = "index.html";
 
     } catch (error) {
-        alert(error.response.data.error);
+        alert(error.message || "Erro ao realizar login");
     }
 });
