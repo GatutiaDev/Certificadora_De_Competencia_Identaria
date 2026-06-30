@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
+    <title>Contato</title>
+</head>
+<body>
+    <main>
+        <header class="navbar">
+            <div class="container">
+                <h1><img class="logo" src="" alt=""></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="perguntas.html">Perguntas</a></li>
+                        <li><a href="aulaextra.html">Aula Extra</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="login.html">Login/Cadastro</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="integrantes">
+                <div class="container">
+                    <h3>Integrantes</h3>
+                    
+                    <div class="integrantes-container">
+                        <div class="integrante-card">
+                            <div><img class="foto-integrante" src="./imgs/f1.jpg" alt="Foto de Beatriz Bonametti"/></div>
+                            <h4>Beatriz Bonametti</h4>
+                            <a class="links-integrantes" target="_blank" href="https://www.linkedin.com/in/beatriz-bonametti-12898a2b8/">Linkedin</a>
+                            <a class="links-integrantes" target="_blank" href="https://github.com/Beatriz-Bonametti">Github</a>
+                            <a class="links-integrantes" target="_blank" href="#">Email</a>
+                        </div>
+                        <div class="integrante-card">
+                            <div><img class="foto-integrante" src="./imgs/perfil.jpg" alt="Foto de Gabriel Tutia"/></div>
+                            <h4>Gabriel Tutia</h4>
+                            <a class="links-integrantes" target="_blank" href="https://www.linkedin.com/in/gabriel-tutia-05bb532a0/">Linkedin</a>
+                            <a class="links-integrantes" target="_blank" href="https://github.com/GatutiaDev">Github</a>
+                            <a class="links-integrantes" target="_blank" href="#">Email</a>
+                        </div>
+                        <div class="integrante-card">
+                            <div><img class="foto-integrante" src="./imgs/f1 (1).jpg" alt="Foto de Gabriel Tutia"/></div>
+                            <h4>Thayrine Costa</h4>
+                            <a class="links-integrantes" target="_blank" href="https://www.linkedin.com/in/thayrine-santos-costa-9b4202198/">Linkedin</a>
+                            <a class="links-integrantes" target="_blank" href="https://github.com/ThayrineSantosCosta">Github</a>
+                            <a class="links-integrantes" target="_blank" href="#">Email</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+            <footer>
+                <div class="container">
+                    <p>&copy; Copyright BGT 2025.</p>
+                </div>
+            </footer>
+
+        <script>        
+            const navbar = document.querySelector(".navbar");
+
+            window.addEventListener("scroll", () => {
+
+            if (window.scrollY > 5) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+
+            });
+        </script>
+</body>
+</html>
