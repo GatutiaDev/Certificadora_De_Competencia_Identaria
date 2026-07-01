@@ -7,7 +7,7 @@ FrontEnd desenvolvido em **HTML**, **CSS** e **JavaScript**
 
 # 📋 Sobre o Projeto
 
-Esta API fornece toda a infraestrutura backend para um sistema de fórum, permitindo que usuários possam:
+Este é um projeto full-stack onde fornece toda a infraestrutura para um sistema no modelo de um fórum, permitindo que usuários possam:
 
 * Criar uma conta
 * Realizar login
@@ -147,6 +147,7 @@ node server.js
 ```
 
 FrontEnd:
+
 Basta abrir o arquivo index.html ou caso tenha a extensão Live Server basta executa-lo.
 
 Caso queira testar a parte API ficará disponível em:
