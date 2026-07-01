@@ -30,6 +30,13 @@ function createPergunta(pergunta) {
     });
 }
 
+function createResposta(resposta) {
+    return request("/respostas", {
+        method: "POST",
+        body: JSON.stringify(resposta),
+    });
+}
+
 function loginUsuario(credentials) {
     return request("/usuario/login", {
         method: "POST",
@@ -48,6 +55,7 @@ window.api = {
     API_BASE_URL,
     getPerguntas,
     createPergunta,
+    createResposta,
     loginUsuario,
     cadastrarUsuario,
 };

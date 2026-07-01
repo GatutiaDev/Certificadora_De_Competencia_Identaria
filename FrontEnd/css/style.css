@@ -221,6 +221,71 @@
             color: #047857;
         }
 
+        .area-respostas {
+            margin-top: 18px;
+            border-top: 1px solid #e5e7eb;
+            padding-top: 18px;
+        }
+
+        .respostas-lista {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 18px;
+        }
+
+        .resposta-item {
+            background: #f9fafb;
+            border-left: 4px solid #2563eb;
+            border-radius: 10px;
+            padding: 12px;
+        }
+
+        .resposta-item p {
+            margin-bottom: 6px;
+        }
+
+        .resposta-item span,
+        .sem-respostas {
+            color: #6b7280;
+            font-size: 0.85rem;
+        }
+
+        .form-resposta label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
+        .form-resposta textarea {
+            width: 100%;
+            min-height: 90px;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            resize: vertical;
+            font-family: inherit;
+            outline: none;
+        }
+
+        .form-resposta textarea:focus {
+            border-color: #005a9c;
+            box-shadow: 0 0 5px rgba(0,90,156,0.2);
+        }
+
+        .mensagem-resposta {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .mensagem-resposta.erro {
+            color: #b91c1c;
+        }
+
+        .mensagem-resposta.sucesso {
+            color: #047857;
+        }
+
         .card {
             background: white;
             padding: 25px;
@@ -252,6 +317,7 @@
         .infos {
             display: flex;
             gap: 15px;
+            align-items: center;
             color: #6b7280;
             font-size: 0.85rem;
             margin-bottom: 20px;
@@ -277,6 +343,11 @@
         .btn-ver-resp{
           color: #2563eb;
           text-decoration: none;
+          border: none;
+          background: transparent;
+          cursor: pointer;
+          font: inherit;
+          padding: 0;
         }
 
         .btn-ver-resp:hover{
