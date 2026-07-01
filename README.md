@@ -145,11 +145,11 @@ Modo produção:
 ```bash
 node server.js
 ```
-
+```
 FrontEnd:
 
 Basta abrir o arquivo index.html ou caso tenha a extensão Live Server basta executa-lo.
-
+```
 Caso queira testar a parte API ficará disponível em:
 
 ```text
