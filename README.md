@@ -1,4 +1,4 @@
-# API REST - Fórum de Perguntas e Respostas
+# Fórum de Perguntas e Respostas
 
 API REST desenvolvida em **Node.js**, **Express** e **Prisma ORM** para gerenciamento de um fórum de perguntas e respostas.
 
